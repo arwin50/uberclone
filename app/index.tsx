@@ -1,10 +1,8 @@
-import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
+import React from "react";
+import { Redirect } from "expo-router";
 
-export default function Index() {
-  return (
-    <View>
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
-  );
-}
+const Home = () => {
+  return <Redirect href={"/(auth)/welcome"} />;
+};
+
+export default Home;
